@@ -10,6 +10,7 @@
 #include <array>
 #include "process.h"
 #include <thread>
+#include <vector>
 
 namespace Computer
 {
@@ -21,6 +22,11 @@ namespace Computer
     private:
       // seed to seed the random num generator
       unsigned long seed;
+
+      std::vector<int> PUs;
+      std::vector<int> instructions;
+      std::vector<int> processes;
+      
       // Add your own variables to manage processes and threads
     public:
       // Constructor with filename of input file
